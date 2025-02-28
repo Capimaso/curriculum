@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.stars {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 1s infinite ease-in-out;
+}

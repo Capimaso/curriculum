@@ -2,19 +2,25 @@
 <html>
 <head>
     <title>Currículo</title>
+    <link rel="icon" href="perfilfoto.jpg">
     <style>
+        
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #000000;
             margin: 0;
             padding: 0;
         }
 
         #header {
-            background-color: rgb(103, 181, 245);
-            color: #fff;
+            background-color: #5941A9;
+            color: #e5d4ed;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
+            margin-left: 600px;
+            margin-right: 600px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
         }
 
         #profile-image {
@@ -26,8 +32,26 @@
 
         #main-content {
             padding: 20px;
+            margin-left: 600px;
+            margin-right: 600px;
+            height: 700px;
+            text-align: center;
+            background-color:#6d72c3;
+            color: #e5d4ed;
+        }
+        
+        #foot {
+            height: 50px;
+            color: #e5d4ed;
+            text-align: center;
+            margin-left: 600px;
+            margin-right: 600px;
+            background-color:#6d72c3;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="header">
@@ -35,7 +59,7 @@
     </div>
     <div id="main-content">
         <h2>Dados Pessoais</h2>
-        <img id="profile-image" src="https://preview.redd.it/goku-vs-amir-v0-87ycluub4s6e1.jpg?width=225&format=pjpg&auto=webp&s=9a9ee77f4aece3d53d1a2b0da87b9e814aca0b2d" alt="Foto de Perfil">
+        <img id="profile-image" src="perfilfoto.jpg" alt="Foto de Perfil">
         <p>Nome: Tiago Duarte da Cunha</p>
         <p>E-mail: tduartedacunha@gmail.com</p>
         <p>Telefone: (48)99129-3595</p>
@@ -44,6 +68,11 @@
         <p>Curso: ADS</p>
         <p>Instituição: Faculdade Municipal de Palhoça</p>
         <p>Ano de Conclusão: 2026</p>
+        <span class="dot"></span>
     </div>
+    <script src="script.js"></script>
 </body>
+<footer id="foot">
+    Capimaso®
+</footer>
 </html>
