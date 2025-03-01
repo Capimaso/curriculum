@@ -36,16 +36,6 @@ body {
     color: #e5d4ed;
     text-align: center;
 }
-.foot {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
-    color: #e5d4ed;
-    text-align: center;
-    left: 50vw;
-    bottom: 6vh;
-    z-index: 1;
-}
 .frontcard {
     position: absolute;
     transform: translate(-50%, 0%);
@@ -54,7 +44,7 @@ body {
     height: 900px;
     background-color: #5941a9;
     border-radius: 5%;
-    top: 12vh;
+    top: 2vh;
     left: 50vw;
     opacity: 0.8;
     z-index: 0;
@@ -62,7 +52,7 @@ body {
 .frontcard::before{
     content: "";
     position: absolute;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     width: 500px;
     height: 900px;
     background-color: #5941a9;
@@ -80,7 +70,7 @@ body {
     height: 900px;
     background-color: #e5d4ed;
     border-radius: 5%;
-    top: 12vh;
+    top: 2vh;
     left: 50vw;
     filter: blur(30px);
     transition: width 0.5s, height 0.5s;
