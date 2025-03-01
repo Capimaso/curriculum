@@ -23,7 +23,7 @@ body {
     transform-origin: center;
     left: 50vw;
     top: 8vh;
-    z-index: -1;
+    z-index: 1;
     text-align: center;
 }
 .main{
@@ -32,7 +32,7 @@ body {
     transform-origin: center;
     left: 50vw;
     top: 12vh;
-    z-index: -1;
+    z-index: 1;
     color: #e5d4ed;
     text-align: center;
 }
@@ -44,31 +44,32 @@ body {
     text-align: center;
     left: 50vw;
     bottom: 6vh;
+    z-index: 1;
 }
 .frontcard {
     position: absolute;
     transform: translate(-50%, -50%);
     transform-origin: center;
     width: 500px;
-    height: 93vh;
+    height: 900px;
     background-color: #5941a9;
     border-radius: 5%;
     top: 49vh;
     left: 50vw;
     opacity: 0.8;
-    z-index: -2;
+    z-index: 0;
 }
 .frontcard::before{
     content: "";
     position: absolute;
     transform: translate(-50%, -50%);
     width: 500px;
-    height: 93vh;
+    height: 900px;
     background-color: #5941a9;
     border-radius: 5%;
     top: 50%;
     left: 50%;
-    z-index: -2;
+    z-index: 0;
 }
 .backcard{
     content: "";
@@ -76,14 +77,14 @@ body {
     transform: translate(-50%, -50%);
     transform-origin: center;
     width: 500px;
-    height: 93vh;
+    height: 900px;
     background-color: #e5d4ed;
     border-radius: 5%;
     top: 49vh;
     left: 50vw;
     filter: blur(30px);
     transition: width 0.5s, height 0.5s;
-    z-index: -3;
+    z-index: -2;
 }
 .stars {
     position: absolute;
@@ -110,6 +111,7 @@ body {
     border: 20px;
     transition: width 0.5s, height 0.5s;
     animation: spin 60s linear infinite;
+    z-index: -2;
 }
 .sun::before {
     content: "";
@@ -123,7 +125,7 @@ body {
     border-radius: 50%;
     filter: blur(100px);
     opacity: 1;
-    z-index: -1;
+    z-index: -2;
 }
 .sun::after {
     content: "";
@@ -135,7 +137,7 @@ body {
     transform: translate(-50%, -50%);
     background: url("sun.jpg");
     border-radius: 50%; 
-    z-index: 1; 
+    z-index: -1; 
 }
 .sun:hover {
     width: 120px;

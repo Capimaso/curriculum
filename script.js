@@ -28,10 +28,10 @@ const front = document.querySelector('.frontcard');
 const back = document.querySelector('.backcard');
 front.addEventListener('mouseenter', () => {
     back.style.width = '520px';
-    back.style.height = '100vh';
+    back.style.height = '920px';
 });
 
 front.addEventListener('mouseleave', () => {
     back.style.width = '500px';
-    back.style.height = '93vh';
+    back.style.height = '900px';
 });
